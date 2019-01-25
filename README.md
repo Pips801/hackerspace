@@ -6,7 +6,7 @@ django 2.1, python 3.6
 
 Install dependencies
 
-    pip install django braintree
+    pip3 install django braintree pyyaml
 
 Add [hackerspace/settings.py](hackerspace/settings.py) file
 
@@ -16,12 +16,12 @@ Add [braintree](https://www.braintreepayments.com/sandbox) settings, update APP_
 
 Database setup
 
-    python manage.py migrate
+    python3 manage.py migrate
 
-    python manage.py loaddata member_levels.yaml
-    python manage.py createsuperuser
+    python3 manage.py loaddata member_levels.yaml
+    python3 manage.py createsuperuser
 
-    python manage.py runserver
+    python3 manage.py runserver
 
 Site http://127.0.0.1:8000/
 
